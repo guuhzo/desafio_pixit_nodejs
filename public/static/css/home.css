@@ -1,0 +1,127 @@
+html, body {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+p, span, h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body, p {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ededed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  
+  height: 80%;
+  max-height: 800px;
+
+  width: 70%;
+  max-width: 600px;
+
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 8px;
+
+  width: 100%;
+  flex: 1;
+
+  overflow: auto;
+}
+
+.item {
+  padding: 16px;
+  margin: 8px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+button {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button.delete {
+  background-color: #f01c1c;
+  color: #fff;
+}
+
+button.delete:disabled {
+  background-color: #636363;
+  color: #fff;
+}
+
+button.delete:disabled:hover {
+  background-color: #636363;
+  color: #fff;
+  cursor: default;
+}
+
+button.delete:hover {
+  background-color: #b81a1a;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  margin: 16px;
+  padding-right: 16px;
+}
+
+button.new {
+  background-color: #02a826;
+  color: #fff;
+}
+
+button.signOut {
+  background-color: #4553AC;
+  color: #fff;
+  margin-left: 8px;
+}
