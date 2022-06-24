@@ -18,10 +18,8 @@ class CurrentUserController {
     try {
       const user = await getUser.execute(req.session.userId!)
       
-      console.log(user)
       return res.json(user)
     } catch (err: any) {
-      console.log(err)
       return res.status(400).json({ message: err.message })
     }
     

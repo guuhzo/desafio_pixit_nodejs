@@ -14,7 +14,6 @@ const pagesPath = path.resolve(__dirname, '..', '..', '..', 'public', 'pages')
  */
 export default async function (req: Request, res: Response) {
   const data = req.body
-  console.log(req.params)
   
   const verifyUserCredentials = new VerifyUserCredentialsService()
   

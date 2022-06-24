@@ -15,19 +15,19 @@ ou
 
 > npm install
 
-### Rodar as migrations para construção da tabela de usuários
-> yarn typeorm migration:run
-
-ou
-
-> npm typeorm migration:run
-
 ### Realizar a build do projeto
 > yarn build
 
 ou
 
 > npm build
+
+### Rodar as migrations para construção da tabela de usuários
+> yarn typeorm migration:run
+
+ou
+
+> npm typeorm migration:run
 
 ### Subir a aplicação
 > yarn start
@@ -38,4 +38,8 @@ ou
 
 ## Adendos
 
-### Na primeira execução de qualquer rota o sistema processará o middleware *bigBang* que é responsável por criar o primeiro usuário da aplicação. Essa etapa se é necessária pois uma vez que todas as rotas são autenticadas com exceção da rota de login.
+1. ### A variável ENV deve estar como PROD para executar as migrations de marneira correta após a etapa de BUILD.
+
+
+
+2. ### Na primeira execução de qualquer rota o sistema processará o middleware *bigBang* que é responsável por criar o primeiro usuário da aplicação. Essa etapa se é necessária pois uma vez que todas as rotas são autenticadas com exceção da rota de login.
